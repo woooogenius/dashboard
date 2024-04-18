@@ -1,6 +1,6 @@
 
 <template>
-    <div class='bg-blue-900 text-white w-56 px-5 py-10 rounded-tr-2xl'>
+    <div class='bg-blue-900 text-white w-240 h-screen px-5 py-10 rounded-tr-2xl'>
         <div>
             <p class='text-xl text-bold mb-5'>userId</p>
             
@@ -22,12 +22,12 @@
             </div>
         </div> <!--top-->        
 
-        <div class='py-10'>
+        <div class='py-6'>
            
             <RouterLink v-for="(menuItem, index) in menuItems"
                 :key="index"
-                class="block p-3 rounded-xl text-center mb-5 cursor-pointer transition delay-75 hover:bg-purple-950"
-                :class="{ 'bg-purple-950 text-white': activeMenu === index }"
+                class="block p-3 rounded-xl text-center mb-5 cursor-pointer transition delay-75 hover:bg-white hover:text-black"
+                :class="{ 'bg-white text-black': activeMenu === index }"
                 :to="menuItem.path"
                 @click="setActiveMenu(index)">
 
