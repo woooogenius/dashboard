@@ -1,9 +1,9 @@
 
 <template>
     <div class="absolute top-0">
-        <div class="w-full relative bg-black">
-            <div class='bg-blue-900 text-white w-240 h-900 px-5 py-6 absolute left-0 top-0'>
-                <div class="mb-3 text-xl">X</div>
+        <div class="w-full relative">
+            <div class='bg-blue-900 text-white w-240 h-screen px-5 py-6 absolute left-0 top-0 z-50'>
+                <div class="mb-3 text-xl" @click="closePopup">X</div>
                 <div>
                     <p class='text-xl text-bold mb-5'>userId</p>
                     
@@ -49,7 +49,7 @@
 </template>
 
 <script setup>
-    import { ref } from 'vue';
+    import { ref, defineEmits } from 'vue';
     import {RouterLink} from 'vue-router'
 
     const menuItems = [
@@ -65,6 +65,13 @@
 
     const setActiveMenu = (index)=>{
         activeMenu.value = index;
+    }
+
+    const emits = defineEmits(['close-popup']);
+    
+    const closePopup =()=>{
+        emits('close-popup')
+        // console.log('emit 발생')
     }
 </script>
 

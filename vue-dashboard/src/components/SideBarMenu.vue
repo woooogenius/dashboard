@@ -1,22 +1,22 @@
 
 <template>
-    <div class='bg-blue-900 text-white w-240 h-900 px-5 py-10 rounded-tr-2xl'>
+    <div class='bg-sideblue text-white w-240 h-999 px-5 py-10 rounded-tr-[30px]'>
         <div>
             <p class='text-xl text-bold mb-5'>userId</p>
             
-            <div class='border-b border-gray-500'>
+            <div class='border-b border-gray-500 text-sidefont text-[16px]'>
                 <div class='flex justify-between'>
-                    <p class='text-gray-300'>보유 크레딧</p>
+                    <p >보유 크레딧</p>
                     <p>120,000</p>
                 </div>
 
                 <div class='flex justify-between mt-3'>
-                    <p class='text-gray-300'>주소록 그룹</p>
+                    <p >주소록 그룹</p>
                     <p>23 그룹</p>
                 </div>
 
                 <div class='flex justify-between mt-3 mb-8'>
-                    <p class='text-gray-300'>등록 발신 번호</p>
+                    <p >등록 발신 번호</p>
                     <p>3 개</p>
                 </div>
             </div>
@@ -26,12 +26,12 @@
            
             <RouterLink v-for="(menuItem, index) in menuItems"
                 :key="index"
-                class="block p-3 rounded-xl text-center mb-5 cursor-pointer transition delay-75 hover:bg-white hover:text-black"
-                :class="{ 'bg-white text-black': activeMenu === index }"
+                class="block w-[192px] h-[52px] leading-[52px] rounded-xl text-center mb-5 cursor-pointer transition delay-75 hover:bg-sidebtn hover:text-white"
+                :class="{ 'bg-sidebtn text-white': activeMenu === index }"
                 :to="menuItem.path"
                 @click="setActiveMenu(index)">
-
-                 {{ menuItem.text }}
+                    {{ menuItem.text }}
+              
             
             </RouterLink>
             

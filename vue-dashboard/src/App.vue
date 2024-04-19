@@ -11,13 +11,16 @@ import TabletSideBar from './components/TabletSideBar.vue'
 
 <template>
     <div class="w-full">
-        <NavigationBar/>
-         <div class="flex flex-row bg-gray-100">
-            <SideBarMenu class="hidden pc:block"/>
-            <TabletSideBar class="hidden tablet:block pc:hidden"/>
-            <RouterView/>
+        <div class="w-1920 m-auto">
+            <NavigationBar/>
+            <div class="flex flex-row bg-gray-100">
+                <SideBarMenu class="hidden pc:block"/>
+                <TabletSideBar class="hidden tablet:block pc:hidden"/>
+                <RouterView/>
+            </div>
+            <FooterComponent/>
         </div>
-        <FooterComponent/>
+        
     </div>
  
 </template>

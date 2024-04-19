@@ -1,12 +1,12 @@
 <template >
     <div>
 
-        <nav class='w-full flex flex-row h-16 bg-white'>
+        <nav class='w-full flex flex-row h-[81px] bg-white'>
             
             <div class='w-2/12 flex flex-row items-center'>
-                <div @click="openPopup" class='ml-2 h-10 w-10 cursor-pointer'><img src="../assets/img/hamburger-menu.png" alt="menu"></div>
-                <div class='ml-2 h-12 w-12 flex align-center items-center'>
-                    <img src="../assets/img/logo.png" alt="logo">
+                <div @click="openPopup" class='ml-2 h-32 w-32 cursor-pointer'><img class="w-full" src="../assets/img/hamburger-menu.png" alt="menu"></div>
+                <div class='ml-2 h-45 w-142 flex align-center items-center justify-center '>
+                    <img class="w-32 h-32" src="../assets/img/logo.png" alt="logo">
                     <p class='text-xl'>sendgo</p>
                 </div>
             </div>
@@ -20,13 +20,13 @@
                     <li><a href="#!">고객센터</a></li>
                 </ul>
 
-                <ul class=' w-1/3 flex justify-center items-center'>
-                    <li class='w-6 mr-5'><img src="../assets/img/alert.png" alt="img"></li>
-                    <li class='w-10 h-10 rounded-full border border-gray-300'>
-                        <img class='w-full h-full rounded-full' src="../assets/img/codemokey.png" alt="img">
+                <ul class='w-1/3 flex justify-center items-center'>
+                    <li class='w-6 mr-[32px]'><img src="../assets/img/alert.png" alt="img"></li>
+                    <li class='w-[44px] h-[44px] rounded-full border border-gray-300'>
+                        <img class='w-full h-full rounded-full' src="../assets/img/user.png" alt="img">
                     </li>
                     <li>
-                        <img class='w-4 ml-2' src="../assets/img/down.png" alt="img">
+                        <img class='w-4 ml-[10px]' src="../assets/img/down.png" alt="img">
                     </li>
                 </ul>
 
@@ -34,7 +34,7 @@
 
         </nav>
         <div>
-            <TabletSidePop class="pc:hidden" v-if="openPopup"/>
+            <TabletSidePop class="pc:hidden transition" :class="{ 'block': isOpen, 'hidden': !isOpen}" v-model="isOpen.value" :isPopupOpen="isOpen" @close-popup="closePopup"/>
         </div>
 
     </div>
