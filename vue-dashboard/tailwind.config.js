@@ -8,7 +8,7 @@ module.exports = {
       'mobile' : '640px',
       'tablet' : '768px',
       'pc' : '1024px',
-      'widepc' : '1280px'
+      'widepc' : '1920px',
     },
      extend: {
       height : {

@@ -4,9 +4,9 @@
         <nav class='w-full flex flex-row h-[81px] bg-white'>
             
             <div class='w-2/12 flex flex-row items-center'>
-                <div @click="openPopup" class='ml-2 h-32 w-32 cursor-pointer'><img class="w-full" src="../assets/img/hamburger-menu.png" alt="menu"></div>
-                <div class='ml-2 h-45 w-142 flex align-center items-center justify-center '>
-                    <img class="w-32 h-32" src="../assets/img/logo.png" alt="logo">
+                <div @click="openPopup" class='ml-2 h-[32px] w-[32px] cursor-pointer'><img class="w-full" src="../assets/img/hamburger-menu.png" alt="menu"></div>
+                <div class='ml-2 h-[45px] w-[142px] flex align-center items-center justify-center '>
+                    <img class="w-[32px] h-[32px]" src="../assets/img/logo.png" alt="logo">
                     <p class='text-xl'>sendgo</p>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 </ul>
 
                 <ul class='w-1/3 flex justify-center items-center'>
-                    <li class='w-6 mr-[32px]'><img src="../assets/img/alert.png" alt="img"></li>
+                    <li class='w-[27px] h-[28px] mr-[32px]'><img class="w-full h-full" src="../assets/img/alert.png" alt="img"></li>
                     <li class='w-[44px] h-[44px] rounded-full border border-gray-300'>
                         <img class='w-full h-full rounded-full' src="../assets/img/user.png" alt="img">
                     </li>

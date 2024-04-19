@@ -11,7 +11,7 @@ import TabletSideBar from './components/TabletSideBar.vue'
 
 <template>
     <div class="w-full">
-        <div class="w-1920 m-auto">
+        <div class="widepc:w-1920 m-auto">
             <NavigationBar/>
             <div class="flex flex-row bg-gray-100">
                 <SideBarMenu class="hidden pc:block"/>

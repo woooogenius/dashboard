@@ -1,5 +1,5 @@
 <template >
-    <footer class='w-full bg-gray-900 text-gray-300'>
+    <footer class='w-full h-[316px] bg-gray-900 text-gray-300'>
         <div class = 'flex items-center px-56 py-10'>
             <div class="w-9/12 tablet:w-6/12 pc:w-8/12 widepc:w-9/12 flex items-center">
                 <img class='w-12' src="../assets/img/logo.png" alt="img">
@@ -7,7 +7,7 @@
             </div>
 
             <div class="w-3/12 tablet:w-6/12 pc:w-4/12 widepc:w-3/12">
-                <ul class='flex justify-between pc:text-sm widepc:text-lg'>
+                <ul class='flex justify-between pc:text-base widepc:text-18'>
                     <li><a href="#!">메시지</a></li>
                     <li><a href="#!">크레딧</a></li>
                     <li><a href="#!">고객센터</a></li>
