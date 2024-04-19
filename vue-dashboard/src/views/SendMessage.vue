@@ -20,7 +20,7 @@
 
         <div class="bg-white px-20 pt-5 flex flex-row flex-wrap pb-40">
 
-            <div class="w-1/2">
+            <div class="w-1/2 tablet:w-full pc:w-1/2">
                 <p class="text-sm text-gray-500">- 간편하게 한 화면에서 단문, 장문, 포토메세지를 발송할 수 있습니다.</p>
                 <p class="text-sm text-gray-500">- 90Byte 초과 시 장문문자로 자동 전환되며, 최대 2,000Byte까지 작성이 가능합니다.</p>
 
@@ -163,9 +163,9 @@
 
             </div> <!-- left -->
 
-            <div class="w-1/2 p-10">
+            <div class="w-1/2 p-10 tablet:hidden pc:block">
                 
-                <div class="border-4 border-black w-400 h-700 rounded-xl sticky left-0 top-10">
+                <div class="border-4 border-black widepc:w-400 pc:w-300 pc:h-500 widepc:h-700 rounded-xl sticky left-0 top-10">
                     <div class="w-full h-full bg-blue-200 rounded-lg">
                         <div class="relative p-5">
                             <p class="absolute left-5 top-5 text-2xl">≪</p>

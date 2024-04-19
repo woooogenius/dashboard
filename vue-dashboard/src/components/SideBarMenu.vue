@@ -1,6 +1,6 @@
 
 <template>
-    <div class='bg-blue-900 text-white w-240 h-screen px-5 py-10 rounded-tr-2xl'>
+    <div class='bg-blue-900 text-white w-240 h-900 px-5 py-10 rounded-tr-2xl'>
         <div>
             <p class='text-xl text-bold mb-5'>userId</p>
             
