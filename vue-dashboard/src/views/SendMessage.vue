@@ -53,7 +53,7 @@
 
 
                 <h4 class="text-18 font-semibold">현재 발송 가능 건수</h4>
-                <ul class="mt-16 bg-lightgray2 h-56 rounded-md flex justify-around">
+                <ul class="mt-16 bg-lightgray2 h-[56px] rounded-md flex justify-around">
                     <li class="">
                         <p class="p-3 mr-16">단문 SMS <span class="text-lg font-bold">152건</span> </p>
                     </li>
@@ -104,9 +104,9 @@
                     <div class="w-full relative">
                         <textarea @change="onChangeTextArea" name="textarea" id="textArea" cols="30" rows="10" class="resize-none w-full h-[295px] text-18 mt-16 rounded-md p-3" placeholder="내용을 입력해 주세요. 90byte 초과 시 장문문자로, 이미지 추가 시, 포토 문자로 자동 전환 됩니다."></textarea>
                         <ul class="absolute right-2 bottom-5 flex flex-row text-center leading-43  text-gray-500">
-                            <li class="bg-gray-100 w-107 h-43 rounded-2xl mr-2">특수문자</li>
-                            <li class="bg-gray-100 w-107 h-43 rounded-2xl mr-2">템플릿</li>
-                            <li class="bg-gray-100 w-107 h-43 rounded-2xl">#[변수]</li>
+                            <li class="bg-gray-100 w-[107px] h-[43px] rounded-2xl mr-2">특수문자</li>
+                            <li class="bg-gray-100 w-[107px] h-[43px] rounded-2xl mr-2">템플릿</li>
+                            <li class="bg-gray-100 w-[107px] h-[43px] rounded-2xl">#[변수]</li>
                         </ul>
                     </div>
 
@@ -114,16 +114,16 @@
 
                     <div class="flex justify-between">
                         <p class="text-18 font-semibold">광고성 문자(080 수신거부번호 포함)</p>
-                         <button 
+                         <div 
                             @click="toggleSwitch" 
                             :class="{ 'bg-blue-500': isActive, 'bg-gray-300': !isActive }" 
-                            class="w-[52px] h-[32px] rounded-full focus:outline-none"
+                            class="w-[52px] h-[33px] rounded-full focus:outline-none"
                             >
                             <span 
-                                :class="{ 'translate-x-2.5': isActive, '-translate-x-2.5': !isActive }" 
+                                :class="{ 'translate-x-5': isActive, '-translate-x-2': !isActive }" 
                                 class="inline-block overflow-hidden w-[33px] h-[33px] bg-white rounded-full shadow-md transform transition"
                             ></span>
-                        </button>
+                        </div>
 
                     </div>
 
@@ -132,7 +132,7 @@
                     <h4 class="text-18 font-semibold mb-5">이미지 추가</h4>
 
                     <input id="add_image" type="file" hidden>
-                   <label for="add_image" class="block w-[100px] h-[100px] border border-gray-400 relative cursor-pointer mb-6 bg-white">
+                   <label for="add_image" class="block w-[100px] h-[100px] border border-borderce relative cursor-pointer mb-6 bg-white">
                         <div class="absolute inset-0 flex justify-center items-center">
                             <div class="w-[19px] h-0.5 bg-gray-500"></div>
                             <div class="w-0.5 h-[19px] bg-gray-500 -translate-x-2.5"></div>
