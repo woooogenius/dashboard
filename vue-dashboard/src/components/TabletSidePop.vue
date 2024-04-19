@@ -2,7 +2,7 @@
 <template>
     <div class="absolute top-0">
         <div class="w-full relative">
-            <div class='bg-blue-900 text-white w-240 h-screen px-5 py-6 absolute left-0 top-0 z-50'>
+            <div class='bg-blue-900 text-white w-[240px] h-screen px-5 py-6 absolute left-0 top-0 z-50'>
                 <div class="mb-3 text-xl" @click="closePopup">X</div>
                 <div>
                     <p class='text-xl text-bold mb-5'>userId</p>

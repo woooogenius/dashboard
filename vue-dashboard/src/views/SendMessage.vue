@@ -166,7 +166,7 @@
 
             <div class="w-1/2 p-10 tablet:hidden pc:block">
                 
-                <div class="border-4 border-black widepc:w-[401px] pc:w-[300px] pc:h-[500px] widepc:h-[775px] rounded-[22px] sticky mt-[50px] ml-[116px] left-[0px] top-[10px] overflow-hidden">
+                <div class="border-4 border-black widepc:w-[401px] pc:w-[350px] pc:h-[700px] widepc:h-[775px] rounded-[22px] sticky mt-[50px] ml-[116px] left-[0px] top-[10px] overflow-hidden">
                     <div class="w-full h-full bg-blue-200 ">
                         <div class="relative p-5">
                             <p class="absolute left-5 top-5 text-2xl">≪</p>
