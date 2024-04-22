@@ -4,10 +4,10 @@
         <div class="pc:px-[50px] mobile:px-[20px] px-124 pt-5">
              <h4 class="text-28 font-bold my-5 mobile:text-[18px]">메시지 전송</h4>
 
-            <ul class="flex mt-40">
+            <ul class="flex mt-40 mobile:mt-20">
 
                 <RouterLink v-for="(menuItem, idx) in menuItems" :key="idx"
-                class="w-[122px] h-[46px] mobile:w-[90px] mobile:leading-[46px] mr-7 text-center transition"
+                class="w-[122px] h-[46px] mobile:w-[90px] mobile:leading-[46px] mobile:mr-[20px] mr-7 text-center transition"
                 :class="{'text-fontblue border-b-2 font-bold border-fontblue' : activeMenu === idx}"
                 :to="menuItem.path"
                 @click="setActiveMenu(idx)"
