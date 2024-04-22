@@ -1,7 +1,7 @@
 <template>
     <div class="w-full">
 
-        <div class="px-124 pt-5">
+        <div class="pc:px-[50px] px-124 pt-5">
              <h4 class="text-28 font-bold my-5">메시지 전송</h4>
 
             <ul class="flex mt-40">
@@ -18,23 +18,23 @@
             </ul>
         </div>
 
-        <div class="bg-white px-124 pt-40 flex flex-row flex-wrap pb-40">
+        <div class="bg-white pc:px-[50px] px-124 pt-40 flex flex-row flex-wrap pb-40">
 
-            <div class="w-1/2 tablet:w-full pc:w-1/2">
+            <div class="w-1/2 pc:w-7/12 tablet:w-full">
                 <p class="text-sm text-fontgray">- 간편하게 한 화면에서 단문, 장문, 포토메세지를 발송할 수 있습니다.</p>
                 <p class="text-sm text-fontgray">- 90Byte 초과 시 장문문자로 자동 전환되며, 최대 2,000Byte까지 작성이 가능합니다.</p>
 
                 <h4 class="text-18 font-semibold mt-56 mb-3">수신번호</h4>
                 <div>
                     <form class="flex">
-                        <input class="w-10/12 h-[61px] border border-gray-200 text-md p-2.5 rounded-md" type="text" placeholder="휴대폰번호 (숫자만입력)">
+                        <input class="w-10/12 h-[61px] border border-gray-200 pc:text-[16px] text-md p-2.5 rounded-md" type="text" placeholder="휴대폰번호 (숫자만입력)">
                         <button class="w-2/12 h-[61px] bg-blue-800 text-white rounded-md ml-5">+ 추가</button>
                     </form>
 
                     <div class="pt-2 w-full h-[177px] pb-40 border border-b-gray-300 mt-16 rounded-t-md">
-                        <p class="text-18 text-lightgray p-2">번호를 입력 후 엔터 혹은 추가하기를 클릭해 주세요.<br/>최대 1만 건까지 붙여넣기 가능합니다.</p>
+                        <p class="pc:text-[16px] text-18 text-lightgray p-2">번호를 입력 후 엔터 혹은 추가하기를 클릭해 주세요.<br/>최대 1만 건까지 붙여넣기 가능합니다.</p>
                     </div>
-                    <div class="flex flex-row justify-between px-3 items-center h-[61px] border border-gray-200 border-t-0 rounded-b-md">
+                    <div class="flex flex-row justify-between px-3 items-center h-[61px] border border-gray-200 border-t-0 rounded-b-md pc:text-[16px]">
                         <p class="font-bold">총 0명</p>
                         <p class="cursor-pointer text-gray-400 underline">모두삭제</p>
                     </div>
@@ -53,17 +53,17 @@
 
 
                 <h4 class="text-18 font-semibold">현재 발송 가능 건수</h4>
-                <ul class="mt-16 bg-lightgray2 h-[56px] rounded-md flex justify-around">
+                <ul class="mt-16 bg-lightgray2 h-[56px] pc:h-[80px] rounded-md flex justify-around pc:text-center">
                     <li class="">
-                        <p class="p-3 mr-16">단문 SMS <span class="text-lg font-bold">152건</span> </p>
+                        <p class="p-3 mr-16">단문 SMS <span class="pc:block text-lg font-bold">152건</span> </p>
                     </li>
 
                     <li class="">
-                        <p class="p-3 mr-16">장문 LMS <span class="text-lg font-bold">100건</span> </p>
+                        <p class="p-3 mr-16">장문 LMS <span class="pc:block text-lg font-bold">100건</span> </p>
                     </li>
 
                     <li class="">
-                        <p class="p-3 mr-16">포토 MMS <span class="text-lg font-bold">100건</span> </p>
+                        <p class="p-3 mr-16">포토 MMS <span class="pc:block text-lg font-bold">100건</span> </p>
                     </li>
                     
                     
@@ -87,7 +87,7 @@
 
                 <div class="border border-gray-200 w-full my-12"></div>
 
-                <h4 class="text-18 font-semibold mb-3">메세지 입력</h4>
+                <h4 class="text-18 pc:text-[16px] font-semibold mb-3">메세지 입력</h4>
 
                 <div class="bg-lightgray4 p-5 rounded-md">
                     <input type="text" class="w-full h-[61px] px-2 rounded-md" placeholder="제목을 입력해주세요. (단문 SMS는 제외, 최대 30byte)">
@@ -102,11 +102,11 @@
                     </div>
 
                     <div class="w-full relative">
-                        <textarea @change="onChangeTextArea" name="textarea" id="textArea" cols="30" rows="10" class="resize-none w-full h-[295px] text-18 mt-16 rounded-md p-3" placeholder="내용을 입력해 주세요. 90byte 초과 시 장문문자로, 이미지 추가 시, 포토 문자로 자동 전환 됩니다."></textarea>
-                        <ul class="absolute right-2 bottom-5 flex flex-row text-center leading-43  text-gray-500">
-                            <li class="bg-gray-100 w-[107px] h-[43px] rounded-2xl mr-2">특수문자</li>
-                            <li class="bg-gray-100 w-[107px] h-[43px] rounded-2xl mr-2">템플릿</li>
-                            <li class="bg-gray-100 w-[107px] h-[43px] rounded-2xl">#[변수]</li>
+                        <textarea @change="onChangeTextArea" name="textarea" id="textArea" cols="30" rows="10" class="resize-none w-full h-[295px] pc:text-[16px] text-18 mt-16 rounded-md p-3" placeholder="내용을 입력해 주세요. 90byte 초과 시 장문문자로, 이미지 추가 시, 포토 문자로 자동 전환 됩니다."></textarea>
+                        <ul class="absolute right-2 bottom-5 flex flex-row text-center leading-43 pc:leading-[35px]  text-gray-500">
+                            <li class="bg-gray-100 w-[107px] pc:w-[85px] pc:h-[35px] h-[43px] rounded-2xl mr-2">특수문자</li>
+                            <li class="bg-gray-100 w-[107px] h-[43px] pc:w-[85px] pc:h-[35px] rounded-2xl mr-2">템플릿</li>
+                            <li class="bg-gray-100 w-[107px] h-[43px] pc:w-[85px] pc:h-[35px] rounded-2xl">#[변수]</li>
                         </ul>
                     </div>
 
@@ -153,7 +153,7 @@
                     <h4 class="text-18 font-semibold mb-3">발송 설정</h4>
 
                     <ul class="flex text-center justify-between">
-                        <li v-for="(btnItem, idx) in btnItems" :key="idx"  @click='toggleClickBtn(idx)' :class="{'border-2 border-blue1 text-blue1 ' : onClickBtn === idx, 'bg-gray-200 border-0 text-gray-500':onClickBtn !== idx, 'mr-3': idx !== btnItems.length - 1}" class="w-6/12 h-[66px] rounded-lg p-4 transition ">{{btnItem.text}}</li>
+                        <li v-for="(btnItem, idx) in btnItems" :key="idx"  @click='toggleClickBtn(idx)' :class="{'border-2 border-blue1 text-blue1 ' : onClickBtn === idx, 'bg-gray-200 border-0 text-gray-500':onClickBtn !== idx, 'mr-3': idx !== btnItems.length - 1}" class="w-6/12 h-[66px] pc:h-[60px] rounded-lg p-4 transition ">{{btnItem.text}}</li>
                     </ul>
                 </div>
 
@@ -164,9 +164,9 @@
 
             </div> <!-- left -->
 
-            <div class="w-1/2 p-10 tablet:hidden pc:block">
+            <div class="w-1/2 p-10 pc:p-0 tablet:hidden pc:block pc:w-5/12">
                 
-                <div class="border-4 border-black widepc:w-[401px] pc:w-[350px] pc:h-[700px] widepc:h-[775px] rounded-[22px] sticky mt-[50px] ml-[116px] left-[0px] top-[10px] overflow-hidden">
+                <div class="border-4 border-black widepc:w-[401px] pc:w-[320px] pc:h-[600px] widepc:h-[775px] rounded-[22px] sticky mt-[50px] pc:ml-[20px] widepc:ml-[110px] left-[0px] top-[10px] overflow-hidden">
                     <div class="w-full h-full bg-blue-200 ">
                         <div class="relative p-5">
                             <p class="absolute left-5 top-5 text-2xl">≪</p>
@@ -188,7 +188,7 @@
             <div class="border border-gray-200 w-full my-8"></div>
 
             <div class="w-full">
-                <button class="w-full h-[65px] text-white bg-blue1 p-3 rounded-lg">발송하기</button>
+                <button class="w-full h-[65px] pc:h-[55px] text-white bg-blue1 p-3 rounded-lg">발송하기</button>
             </div>
 
 
@@ -235,7 +235,6 @@
         window.alert('90byte 이하로 작성해주세요')
         textAreaValue.value = textAreaValue.value.slice(0,90)
         
-    
     
        }
 

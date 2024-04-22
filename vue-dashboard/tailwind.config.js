@@ -40,6 +40,7 @@ module.exports = {
         'lightgray3' : '#7B7B7B',
         'lightgray4' : '#F6F6F6',
         'violet' : '#5E2BFF',
+        'violet2' : '#544AE4',
         'blue1' : '#4F44F0',
         'sideblue' : '#162850',
         'sidefont' : '#D7E0F4',

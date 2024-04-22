@@ -1,50 +1,54 @@
 
 <template>
-    <div class="absolute top-0">
-        <div class="w-full relative">
-            <div class='bg-blue-900 text-white w-[240px] h-screen px-5 py-6 absolute left-0 top-0 z-50'>
-                <div class="mb-3 text-xl" @click="closePopup">X</div>
-                <div>
-                    <p class='text-xl text-bold mb-5'>userId</p>
-                    
-                    <div class='border-b border-gray-500'>
-                        <div class='flex justify-between'>
-                            <p class='text-gray-300'>보유 크레딧</p>
-                            <p>120,000</p>
+    <div>
+        <div class="fixed top-0 left-0 w-full h-full bg-black z-10 opacity-80"></div>
+        <div class="absolute top-0 z-50">
+            <div class="w-full relative">
+                <div class='bg-sideblue text-white w-[240px] h-screen px-5 py-6 absolute left-0 top-0 z-50'>
+                    <div class="mb-[77px] text-xl" @click="closePopup">X</div>
+                    <div>
+                        <p class='text-[20px] text-bold mb-5'>userId</p>
+                        
+                        <div class='border-b border-gray-500'>
+                            <div class='flex justify-between'>
+                                <p class='text-sidefont'>보유 크레딧</p>
+                                <p>120,000</p>
+                            </div>
+
+                            <div class='flex justify-between mt-3'>
+                                <p class='text-sidefont'>주소록 그룹</p>
+                                <p>23 그룹</p>
+                            </div>
+
+                            <div class='flex justify-between mt-3 mb-8'>
+                                <p class='text-sidefont'>등록 발신 번호</p>
+                                <p>3 개</p>
+                            </div>
                         </div>
+                    </div> <!--top-->        
 
-                        <div class='flex justify-between mt-3'>
-                            <p class='text-gray-300'>주소록 그룹</p>
-                            <p>23 그룹</p>
-                        </div>
-
-                        <div class='flex justify-between mt-3 mb-8'>
-                            <p class='text-gray-300'>등록 발신 번호</p>
-                            <p>3 개</p>
-                        </div>
-                    </div>
-                </div> <!--top-->        
-
-                <div class='py-6'>
-                
-                    <RouterLink v-for="(menuItem, index) in menuItems"
-                        :key="index"
-                        class="block p-3 rounded-xl text-center mb-5 cursor-pointer transition delay-75 hover:bg-white hover:text-black"
-                        :class="{ 'bg-white text-black': activeMenu === index }"
-                        :to="menuItem.path"
-                        @click="setActiveMenu(index)">
-
-                        {{ menuItem.text }}
+                    <div class='py-6'>
                     
-                    </RouterLink>
-                    
+                        <RouterLink v-for="(menuItem, index) in menuItems"
+                            :key="index"
+                            class="block px-3 py-4 rounded-xl text-left mb-5 cursor-pointer transition delay-75 hover:bg-violet2 hover:text-white"
+                            :class="{ 'bg-violet2 text-white': activeMenu === index }"
+                            :to="menuItem.path"
+                            @click="setActiveMenu(index)">
 
-                </div> <!--bottom-->
+                            {{ menuItem.text }}
+                        
+                        </RouterLink>
+                        
 
+                    </div> <!--bottom-->
+
+                </div>
             </div>
+        
         </div>
-    
     </div>
+   
         
 </template>
 

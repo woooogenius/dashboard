@@ -1,6 +1,6 @@
 <template >
     <footer class='w-full h-[316px] bg-gray-900 text-gray-300'>
-        <div class = 'flex items-center px-56 py-10'>
+        <div class = 'flex items-center px-56 tablet:px-[110px] py-10'>
             <div class="w-9/12 tablet:w-6/12 pc:w-8/12 widepc:w-9/12 flex items-center">
                 <img class='w-12' src="../assets/img/logo.png" alt="img">
                 <p>sendgo</p>
@@ -15,7 +15,7 @@
             </div>
         </div>
 
-        <div class='border-t border-gray-500 px-56 py-10 tablet:text-sm pc:text-base'>
+        <div class='border-t border-gray-500 px-56 tablet:px-[110px] py-10 tablet:text-sm pc:text-base'>
             <p>Location. 부산광역시 부산진구 중앙대로 623 3층 - 4층</p>
             <div class='flex mt-5'>
                 <p>P. 1833.5770</p>
