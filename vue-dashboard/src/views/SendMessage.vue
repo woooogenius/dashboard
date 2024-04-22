@@ -52,17 +52,17 @@
 
 
                 <h4 class="text-18 font-semibold">현재 발송 가능 건수</h4>
-                <ul class="mt-16 bg-lightgray2 h-[56px] pc:h-[80px] mobile:h-[80px] mobile:text-center rounded-md flex justify-around pc:text-center">
+                <ul class="mt-16 bg-lightgray2 widepc:h-[56px] pc:h-[80px] mobile:h-[80px] mobile:text-center tablet:text-center rounded-md flex justify-around pc:text-center">
                     <li class="">
-                        <p class="p-3 mr-16">단문 SMS <span class="pc:block text-lg font-bold ">152건</span> </p>
+                        <p class="p-3 mr-16">단문 SMS <span class="pc:block tablet:block mobile:block widepc:inline text-lg font-bold ">152건</span> </p>
                     </li>
 
                     <li class="">
-                        <p class="p-3 mr-16">장문 LMS <span class="pc:block text-lg font-bold">100건</span> </p>
+                        <p class="p-3 mr-16">장문 LMS <span class="pc:block tablet:block mobile:block widepc:inline text-lg font-bold">100건</span> </p>
                     </li>
 
                     <li class="">
-                        <p class="p-3 mr-16">포토 MMS <span class="pc:block text-lg font-bold">100건</span> </p>
+                        <p class="p-3 mr-16">포토 MMS <span class="pc:block tablet:block mobile:block widepc:inline text-lg font-bold">100건</span> </p>
                     </li>
                     
                     
